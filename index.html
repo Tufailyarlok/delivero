@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="hello"></div>
+
+            <div id="imagediv">
+                <img src="/photos/rollover-hero-1-removebg-preview.png" alt="">
+            </div>
+            <div id="btndiv">
+                <button class="btn" type="menu"> Sign In</button>
+                <button class="btn" id="btn2" type="menu">Sign Up</button>
+            </div>
+        </nav>
+        <div id="mainhead">
+            <h1>Discover restaurants and more near you.</h1>
+            <div id="myinput">
+                <i id="place" class="fa-thin fa-location-dot"></i>
+                <input class="input-field" placeholder="Enter delivery address">
+                <i id="arrow" class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div>
+                <i id="sign" class="fa-thin fa-user"></i>
+                <button id="btn">Sign In</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="mydiv">
+                <img src="photos/ScootScoot.svg" alt="">
+                <div class="likh">
+                    <h2>Become a Dasher</h2>
+                    <h3>As a delivery driver make money and work on your schedule. sign up in minutes.</h3>
+                    <button><span>start earning</span><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="mydiv">
+                <img src="photos/Storefront.svg" alt="">
+                <div class="likh">
+                    <h2>Become a Partner</h2>
+                    <h3>Grow your business and reach new customers by partnering with us.</h3>
+                    <button><span>Sign up your store</span><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="mydiv">
+                <img src="photos/iphone.svg" alt="">
+                <div class="likh">
+                    <h2>Get the best DoorDash experience</h2>
+                    <h3>Experience the best your neighborhood has to offer, all in one app.</h3>
+                    <button><span>Get the app</span><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="first">
+                <h2>Everything you crave, delivered.</h2>
+                <h3>Your favorite local restaurants</h3>
+                <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout
+                    spot you've been meaning to try.</p>
+                <button>Find restaurants</button>
+
+            </div>
+            <div class="second">
+                <img src="/photos/download_the_app_desktop.avif" alt="">
+            </div>
+        </div>
+
+        <div class="container2" id="secondcon">
+            <div class="second">
+                <img src="/photos/dashpass_desktop.avif" alt="">
+            </div>
+            <div class="first" id="firsts">
+                <h2>DashPass is delivery for less</h2>
+                <p>Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus,
+                    it's free for 30 days.</p>
+                <button>Get DashPass</button>
+
+            </div>
+        </div>
+
+
+        <div id="container3">
+            <div class="first" id="fir">
+                <h2>Get grocery and convenience store essentials</h2>
+                <h4>Grocery delivery, exactly how you want it.</h4>
+                <p>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights and more.</p>
+                <button>Shop Groceries</button>
+            </div>
+
+
+        </div>
+
+        <h2>CART OPTIONS:</h2>
+<div id="parent">
+        <div class="ctr">
+            <div class="card" id="item1">
+                <img src="photos/CHICKEN.avif" alt="">
+                <div class="title">CHICKEN</div>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                    </select>
+                </div>
+                <button class="mybtn" onclick="addTocart(item1)">Add to Cart</button>
+            </div>
+            <div class="card" id="item2">
+                <img src="/photos/ROLLS.avif" alt="">
+                <div class="title">ROLLS</div>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                    </select>
+                </div>
+                <button class="mybtn" onclick="addTocart(item2)">Add to Cart</button>
+            </div>
+            <div class="card" id="item3">
+                <img src="/photos/BURGER.avif" alt="">
+                <div class="title">BURGER</div>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                    </select>
+                </div>
+                <button class="mybtn" onclick="addTocart(item3)">Add to Cart</button>
+            </div>
+            <div class="card" id="item4">
+                <img src="/photos/BIRYANI.avif" alt="">
+                <div class="title">BIRYANI</div>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                    </select>
+                </div>
+                <button class="mybtn" onclick="addTocart(item4)">Add to Cart</button>
+            </div>
+            <div class="card" id="item5">
+                <img src="/photos/GUZEL.avif" alt="">
+                <div class="title">GUZEL</div>
+                <div>
+                    <label>SIZE:</label>
+                    <select>
+                        <option>30</option>
+                        <option>32</option>
+                        <option>34</option>
+                        <option>36</option>
+                    </select>
+                </div>
+                <button class="mybtn" onclick="addTocart(item5)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart" id="cart">
+            <div class="title">YOUR CART: </div><hr>
+            <div id="title"></div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="base1">
+            <h2>Get more from your neighborhood</h2>
+            <div id="innerbase">
+                <a href="">New York</a>
+                <a href="">Los Angeles</a>
+                <a href="">Toronto</a>
+                <a href="">Chicago</a>
+                <a href="">Houston</a>
+                <a href="">Brooklyn</a>
+                <a href="">San Diego</a>
+                <a href="">Las Vegas</a>
+                <a href="">San Francisco</a>
+                <a href="">Seattle</a>
+            </div>
+        </div>
+
+</div>
+    </footer>
+    <script src="hello.js"></script>
+</body>
+
+
+</html>
